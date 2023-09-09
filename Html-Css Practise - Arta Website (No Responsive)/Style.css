@@ -1,0 +1,408 @@
+@font-face {
+    font-family: Shabnam-Bold;
+    src: url(Shabnam-Bold.ttf);
+}
+
+@font-face {
+    font-family: Iransans_Medium;
+    src: url(IRANSans_Medium.ttf);
+}
+
+@font-face {
+    font-family: Iransans_Light;
+    src: url(IRANSans_Light.ttf);
+}
+
+@font-face {
+    font-family: Iransans_Black;
+    src: url(IRANSans_Black.ttf);
+}
+
+*{
+
+    font-family: Iransans_Medium;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.Container{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+   
+}
+
+
+ul{
+
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+   
+}
+
+
+ul li a{
+
+    padding: 0 15px;
+    color: #959595;
+    font-size: 1rem;
+       
+}
+
+
+
+.Logo-type {
+
+    display: flex;
+    margin-right: 130px;
+}
+
+
+.Icon-logo{
+
+    width: 20px;
+    height: 20px;
+    background-color: #2E6DFF;
+    border-radius: 50%;
+    align-items: center;
+    transform: translate(0px , 6px);
+    
+}
+
+
+.Icon-logo + .Logo-text {
+
+    padding-right: 10px;
+   
+}
+
+.Logo-text{
+
+    font-family: Shabnam-Bold;
+    font-size: 1.7rem;
+    
+}
+
+
+
+.Sign{
+
+    display: flex;
+    justify-items: center;
+    margin-left: 130px;
+   
+}
+
+.Sign-in + .Sign-btn {
+
+    padding-right: 39px;
+   
+   
+}
+
+.Sign-in a{
+    color: #2E6DFF;
+    
+    
+
+}
+
+.Sign-in{
+
+    width: 20px;
+
+}
+
+.Sign-btn a{
+
+    background-color: #2E6DFF;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 3px;
+    align-items: center;
+    font-size: 0.8rem;
+
+    
+}
+
+.Sign-btn a:hover{
+
+    background-color: #2a60dd ;
+}
+
+
+.Dote{
+
+    background-color: #2e6dff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%; 
+    transform: translate(372px , 34px);
+
+}   
+
+
+
+.Container-main{
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    
+}
+
+
+
+
+.Call-to-action{
+
+    display: flex;
+    margin-top: 75px;
+    justify-content: space-between;
+}
+
+
+
+button.Call1{
+
+    background-color: #2E6DFF;
+    width: 171px;
+    height: 50px;
+    border-radius: 2px;
+    color: white;
+    border: none;
+
+}
+
+button.Call1 a{
+    color: #ffffff;
+}
+
+
+button.Call2{
+
+    background-color: #E9F0FF;
+    margin-left: 130px;
+    width: 114px ;
+    height: 50px;
+    border: none;
+}
+    
+
+button.Call2 a{
+    color: #2E6DFF;
+}
+
+
+button.Call1:hover{
+
+    background-color: #2a60dd ;
+}
+
+button.Call2:hover{
+
+    background-color: #d8e0f3;
+}
+
+
+
+
+
+div h1{
+
+    font-family: Iransans_Black;
+    font-size: 2.5rem;
+    line-height: 190.5%;
+    color: #616161;
+    
+
+}
+
+.Text-right{
+
+    position: relative;
+}
+
+.Under-h1{
+
+    width: 172px;
+    height: 27px;
+    background-color: #FFDD56;
+    position: absolute;
+    top: 42px;
+    right: 282px;
+    z-index: -1;
+}
+
+div p{
+
+    color: #959595;
+    font-size: 0.8rem;
+    font-family: Iransans_Medium;
+    line-height: 232.5%;
+    margin-top: 35px;
+    text-align: justify;
+    
+}
+
+
+
+.Pic-main {
+
+    margin-right: 130px;
+    position: relative;
+    
+}
+
+
+button.Play img{
+
+    position: absolute;
+    top: 41%;
+    left: 43%;
+    z-index: 2;
+}
+
+.Dotee{
+
+    position: absolute;
+    left: 95%;
+    bottom: 92%;
+    z-index: -1;
+}
+
+.Play-scale{
+
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    opacity: 30%;
+    border-radius: 50%;
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    z-index: 1;
+    animation: Loop 1.8s infinite ease-out;
+}
+
+@keyframes Loop{
+
+    0%{scale: 0 0; opacity: 100%;}
+    100%{scale: 1.2 1.2; opacity: 2%;}
+
+
+}  
+
+
+
+
+.Big-text{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 225px;
+    position: relative;
+
+}
+
+.Big-text p {
+
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+
+
+.Under2{
+
+    width: 160px;
+    height: 27px;
+    background-color: #FFDD56;
+    position: absolute;
+    top: 32%;
+    right: 50%;
+    z-index: -1;
+}
+
+
+
+.Help-container{
+
+    display: flex;
+    justify-content: space-around;
+    margin: 0 85px 0 85px;
+
+}
+
+
+
+
+.Box-main1{
+    
+    display: flex;
+    margin-top: 100px;
+   
+}
+
+.Box1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    background-color: #E9F0FF;
+    border-radius: 2px;
+    
+}
+
+
+.txt-box{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 18px;
+    position: relative;
+}
+
+.txt-box h2{
+
+    font-size: 1rem;
+}
+
+.txt-box p{
+
+    margin-top: 10px;
+    font-size: 0.8rem;
+    
+}
+
+.Learn-more{
+
+    margin-top: 25px;
+}
+
+
+.Learn-more a{
+
+    font-size: 0.9rem;
+    color: #2E6DFF;
+}
+.Learn-more img{
+
+
+    position: absolute;
+    right: 110px;
+    bottom: 3px;
+}
+

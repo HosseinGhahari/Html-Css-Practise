@@ -1,0 +1,588 @@
+:root {
+
+    --Primary-Bluecolor : #277BC0;
+    --Primary-Darkcolor : #293462;
+    --Primary-Orangecolor : #F78658;
+    --Neutral-Pinklowcolor : #FDE9E1;
+    --Neutral-Bluelowcolor : #F1F6FB;
+    --Neutral-ParaColor : #B3B3B3;
+    --Neutral-Whitecolor : #ffff;
+
+    --Fontfamily-Medium : var (var(--Fontfamily-Medium))
+    --Fontfamily-Bold : var (var(--Fontfamily-Bold))
+    --Fontfamily-Heavy : var (var(--Fontfamily-Heavy))
+
+    --Fs-16 : 1rem;
+    --Fs-18 : 1.125rem;
+    --Fs-20 : 1.25rem;
+    --Fs-22 : 1.375rem;
+    --Fs-24 : 1.5rem;
+    --Fs-30 : 1.875rem;
+    --Fs-38 : 2.375rem;
+    --Fs-48 : 3rem;
+
+    --Fs-Nav : var (--Fs-22);
+    --Fs-Logo : var (--Fs-30);
+    --Fs-Primary :var (--Fs-48);
+    --Fs-Secondery : var (--Fs-20);
+    --Fs-Discord : var (--Fs-16);
+
+    --Size-120 : 5.625rem;
+    --Size-64 : 4rem;
+    --Size-20 : 1.25rem;
+    --Size-40 : 2.5rem;
+}
+
+@font-face {
+    font-family: Yekan-Bakh-Medium;
+    src: url(./Font/Yekan-Bakh-Medium.ttf);
+}
+
+@font-face {
+    font-family: Yekan-Bakh-Bold;
+    src: url(./Font/Yekan-Bakh-Bold.ttf);
+}
+
+@font-face {
+    font-family: Yekan-Bakh-Heavy;
+    src: url(./Font/Yekan-Bakh-Heavy.ttf);
+}
+
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+
+}
+
+body{
+
+    background-color: #FCFCFC;
+    
+}
+
+
+
+.Fontfamily-Medium { 
+
+    font-family: Yekan-Bakh-Medium;
+}
+
+.Fontfamily-Bold {
+
+    font-family: Yekan-Bakh-Bold;
+}
+
+.Fontfamily-Heavy {
+
+    font-family: Yekan-Bakh-Heavy;
+
+}
+
+
+.Size-120 {
+
+    padding-block: var(--Size-120);
+
+}
+
+.Size-64 {
+
+    padding-block: var(--Size-64);
+
+}
+
+.Size-40 {
+
+    padding-block: var(--Size-40);
+
+}
+
+.Size-20 {
+
+    padding-block: var(--Size-20);
+    
+}
+
+
+.Fs-16 {
+
+    font-size: 1rem;
+} 
+
+.Fs-18 {
+
+    font-size: 1.125rem;
+}
+
+.Fs-20 {
+
+    font-size: 1.25rem;
+}
+
+.Fs-22 {
+
+    font-size: 1.375rem;
+
+}
+
+
+.Fs-24 {
+
+    font-size: 1.5rem;
+
+}
+
+.Fs-30 {
+
+    font-size: 1.875rem;
+
+}
+
+.Fs-44 {
+
+    font-size: 2.375rem;
+
+}
+
+.Fs-48 {
+
+    font-size: 3rem;
+
+}
+
+.Fs-Logo {
+
+    font-size: var(--Fs-30);
+   
+}
+
+.Fs-Nav {
+
+    font-size: var(--Fs-18);
+    
+}
+
+.Fs-Primary {
+
+    font-size: var(--Fs-48);
+    
+}
+
+
+.Fs-Secondery {
+
+    font-size: var(--Fs-20);
+    
+}
+
+.Fs-Discord {
+
+    font-size: var(--Fs-16);
+    
+}
+
+
+.Primary-Bluecolor {
+
+    color: var(--Primary-Bluecolor);
+
+}
+
+.Primary-Darkcolor {
+
+    color: var(--Primary-Darkcolor);
+
+}
+
+.Primary-Orangecolor {
+
+    color: var(--Primary-Orangecolor);
+}
+
+.Neutral-Pinklowcolor {
+
+    color: var(--Neutral-Pinklowcolor);
+
+}
+
+.Neutral-Bluelowcolor {
+
+    color: var(--Neutral-Bluelowcolor);
+}
+
+
+.Neutral-ParaColor {
+
+    color: var(--Neutral-ParaColor);
+} 
+
+.Neutral-Whitecolor {
+
+    color: var(--Neutral-Whitecolor);
+}
+
+
+.Container {
+
+    max-width: 80%;
+    margin: 0 auto;
+    
+
+}
+
+.Padding{
+
+    padding-top: 2.5rem;
+}
+
+.Menu-bar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+
+    display: flex;
+    
+}
+
+
+.Logo h3 {
+
+    padding-right: 14px;
+
+}
+
+li {
+
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #B3B3B3;
+    transition: 0.5s ease;
+    justify-items: center;
+    
+}
+
+li:hover{
+
+    cursor: pointer;
+    color: #293462;
+
+}
+
+
+
+.Discord-btn {
+
+    cursor: pointer;
+    border: none;
+    display: flex;
+    background-color: #277BC0;
+    padding: 14px 22px;
+    border-radius: 12px;
+    color: white;
+    justify-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+
+.Discord-btn:hover {
+
+    background-color: #4093d6;
+   
+    
+}
+
+.Anjoman {
+
+    font-weight: 500;
+
+}
+
+
+.H3-items {
+
+    display: flex;
+    gap: 10px;
+}
+
+
+.Know-btn {
+
+    cursor: pointer;
+    background-color: var(--Primary-Bluecolor);
+    border: none;
+    padding: 14px 22px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s ease;
+
+}
+
+.Know-btn:hover {
+
+    background-color: #4093d6;
+}
+
+
+.Grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+}
+
+
+.Grid-container2 {
+
+    grid-column: 2/3;
+    justify-self: self-end;
+    
+}
+
+
+.Group-txt {
+
+  text-align: center;
+
+}
+
+
+.Element::after {
+
+    content: url('./Image/Left.svg');
+    width: 10px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.Element::before {
+
+    content: url('./Image/right.svg');
+    width: 10px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+
+
+.Group-main {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    
+
+
+}
+
+.Box-all {
+
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    grid-template-rows: repeat(2,max-content);
+    grid-gap: 20px;
+}
+
+
+.Arrow-right {
+
+    align-self: center;
+    cursor: pointer;
+}
+
+.Arrow-left {
+
+    justify-self: self-end;
+    align-self: center;
+    cursor: pointer;
+
+}
+
+
+.Box1{
+
+    
+    background-color: #fff;
+    width: 372.67px;
+    height: 370px;
+    border-radius: 10px 70px 10px 10px;
+    box-shadow: 0px 5px 8px 1px #f3f3f3;
+    display: grid;
+    grid-template-rows: 1fr repeat(2 , max-content) 0.2fr ;
+    align-content: start; 
+    justify-items: center;
+    padding-top: 40px
+    
+}
+
+.text-padding {
+
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.text-padding2 {
+
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.text-padding3 {
+
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.text-padding4 {
+
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+
+
+.Box2{
+
+    background-color: #fff;
+    width: 370px;
+    height: 390px;
+    border-radius: 70px 10px 10px 10px;
+    box-shadow: 0px 5px 8px 1px #f3f3f3;
+    display: grid;
+    grid-template-rows: 1fr repeat(2 , max-content) 0.2fr ;
+    align-content: start; 
+    justify-items: center;
+    padding-top: 40px
+}
+
+.Box3{
+
+    background-color: #fff;
+    width: 370px;
+    height: 385px;
+    border-radius: 10px 10px 70px 10px;
+    box-shadow: 0px 5px 8px 1px #f3f3f3;
+    display: grid;
+    grid-template-rows: 1fr repeat(2 , max-content) 0.2fr ;
+    align-content: start; 
+    justify-items: center;
+    padding-top: 40px
+}
+
+
+.Box4{
+
+    background-color: #fff;
+    width: 370px;
+    height: 370px;
+    border-radius: 10px 10px 10px 70px;
+    box-shadow: 0px 5px 8px 1px #f3f3f3;
+    display: grid;
+    grid-template-rows: 1fr repeat(2 , max-content) 0.2fr ;
+    align-content: start; 
+    justify-items: center;
+    padding-top: 40px
+
+}
+
+
+.Circle1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDEDFB;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    
+}
+
+
+.Circle2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDE8F5;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+}
+
+
+.Circle3{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CFF9E8;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    
+}
+
+
+.Circle4{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8E3F9;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+.Telgram {
+
+    justify-self: center;
+    background-color: transparent;
+    border: 1.16px solid #DEDEDE;
+    padding: 12px 24px ;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+
+.Telgram2 {
+
+    justify-self: center;
+    background-color: transparent;
+    border: 1.16px solid #DEDEDE;
+    padding: 12px 24px ;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+
+
+.Telgram3 {
+
+    justify-self: center;
+    background-color: transparent;
+    border: 1.16px solid #DEDEDE;
+    padding: 12px 24px ;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+

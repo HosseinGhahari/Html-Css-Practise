@@ -1,0 +1,1026 @@
+
+/*  General Part  */
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*  General Part  */
+
+
+
+
+
+/*  Header Part  */
+
+.Header {
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./Images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.Logo-img {
+
+    margin-top: 8px;
+
+}
+
+
+nav {
+
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Nav-links {
+
+    flex: 1;
+    text-align: right;
+
+}
+
+.Nav-links ul li {
+
+    display: inline-block;
+    padding: 2% 1.5%;
+    position: relative;
+}
+
+
+.Nav-links ul li::after{
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: coral;
+    display: block;
+    margin: 5px auto;
+    transition: 0.4s ease;
+}
+
+.Nav-links ul li:hover::after {
+
+    width: 100%;
+    
+}
+
+nav ul li a {
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+.Center-header {
+
+    display: grid;
+    grid-template-rows: repeat(3,max-content);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 5px;
+    margin-top: 8rem;
+
+}
+
+.Center-header h1 {
+
+    font-size: 4rem;
+    color: white;
+
+}
+
+.Center-header p {
+
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: white;
+}
+
+.Btn-hero {
+
+    background-color: transparent;
+    border: 1px solid #fff;
+    justify-self: center;
+    padding: 12px 35px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+.Btn-hero:hover {
+
+    background-color: coral;
+    border: none;
+
+}
+
+
+.Close, .Menu {
+
+    display: none;
+
+}
+
+
+@media (max-width : 700px) {
+
+    .Center-header h1 {
+
+        font-size: 1.6rem;
+    
+    }
+
+    .Nav-links ul li:hover::after {
+
+        width: 0%;
+    }
+
+
+    .Nav-links ul li {
+
+        display: block;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .Nav-links {
+
+        width: 200px;
+        height: 100vh;
+        background-color: coral;    
+        position: fixed;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.6s ease;
+    }
+
+    .Center-header p {
+
+        font-size: 0.6rem;
+        margin-top: 5px;
+        color: white;
+    }
+
+    
+    .Nav-links ul {
+
+        padding: 45px;
+    }
+
+    .Close, .Menu {
+
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    
+ 
+    .Logo-img {
+
+        position: absolute;
+        top: 18px;
+    
+    }
+    
+
+    .Logo-img {
+
+        margin-top: 4px;
+    
+    }
+    
+
+}
+
+
+/*  Header Part  */
+
+
+
+
+
+/*  Course  Part  */
+
+
+.Course {
+
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    
+}
+
+
+.Main-h3 {
+
+    font-size: 1.8rem !important;
+    font-weight: 600  ;
+    padding: 10px;
+}
+
+.Course h3{
+
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 600;
+    
+    
+}
+
+.Course p {
+
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+
+.Box-main {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+   
+
+}
+
+.Box { 
+
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 5%;
+    transition: 0.4s ease;
+}
+
+
+.Box:hover {
+
+    scale: 1.07;
+
+}
+
+
+
+@media (max-width : 700px) {
+
+    .Box-main {
+
+        flex-direction: column;
+    }
+
+    .Box:hover {
+
+        scale: 1;
+    
+    }
+    
+
+}
+
+
+
+/*  Course  Part  */
+
+
+
+
+
+/*  Campus  Part  */
+
+
+
+.Campus {
+
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+.Campus p {
+
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+
+.Campus img {
+
+    width: 100%;
+    display: block;
+}
+
+
+.Col-main {
+
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+
+.Col-main:hover{
+
+
+    scale: 1.03;
+}
+
+
+.Layer {
+
+    width: 100%;
+    height: 100%;
+    background-color: #f7c64b00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+.Layer:hover{
+
+    background-color: #f8762b63;
+
+}
+
+.Layer h3 {
+
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: white;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom:  0;
+    transition: 0.6s ease;
+    opacity: 0;
+    
+}
+
+.Layer:hover h3{
+
+    bottom: 50%;
+    opacity: 1;
+             
+}
+
+
+/*  Campus  Part  */
+
+
+
+
+
+/*  Facilities  Part  */
+
+
+.Facilities {
+
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+
+.Pic-col  {
+
+    flex-basis: 31%;
+    text-align: left;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    
+}
+
+
+.Pic-col img {
+
+    width: 100%;
+    flex-basis: 31%;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+
+.Pic-col h3 {
+
+    padding: 15px 0 15px 0;
+    font-weight: 600;
+
+}
+
+
+.Pic-col:hover img {
+
+    scale: 1.05;
+
+}
+
+
+.Pic-col h3 {
+
+    padding: 15px 0 15px 0;
+    font-weight: 600;
+    
+}
+
+.Pic-col p {
+
+    color: #aaaaaa;
+    font-size: 0.9rem;
+
+}
+
+
+.Facilities p {
+
+    color: #aaaaaa;
+
+}
+
+
+
+/*  Facilities  Part  */
+
+
+
+
+/*  Review  Part  */
+
+
+.Review { 
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.Review p {
+
+    color: #aaaaaa;
+
+}
+
+.Review-box img {
+
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+.Review-flex img {
+
+    transform: translateX(20px);
+    margin-top: -15px;
+    
+}
+
+
+.Review-box {
+
+    display: flex;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding: 30px;
+    text-align: left;
+    flex-basis: 48%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.Review-box:hover {
+
+    scale: 1.05;
+
+}
+
+
+.Review-flex p{
+
+    font-size: 0.9rem;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.Review-flex h3 {
+
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+
+}
+
+
+
+/*  Review  Part  */
+
+
+
+
+
+/*  Call to action  Part  */
+
+
+
+
+.Call-action {
+
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./Images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 90px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Call-action h1{
+
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5px 0;
+    margin-bottom: 50px;
+
+}
+
+
+@media (max-width : 700px) {
+
+    .Call-action h1{
+
+        font-size: 1.2rem;
+        
+    }
+    
+
+}
+
+/*  Call to action  Part  */
+
+
+
+
+/*  Footer  Part  */
+
+
+    .Footer{
+
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    
+    }
+
+    .Footer h3 {
+
+        color: coral;
+        font-weight: 700;
+
+    }
+
+    .Footer p {
+
+        padding: 20px;
+        color: #aaaaaa;
+    }
+
+
+
+
+
+/*  Footer  Part  */
+
+
+
+
+
+
+
+
+
+/*----------------About us ----------------*/
+
+
+
+
+.About-us {
+
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./Images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.About-size {
+
+    max-width: 80%;
+    text-align: left;
+    margin: auto;
+    padding-top: 50px;
+    
+}
+
+
+.About-us h1 {
+
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+   
+}
+
+
+
+.About-col {
+
+    flex-basis: 48%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+    
+}
+
+.About-col h1 {
+
+    font-size: 2.3rem;
+    padding-bottom: 20px;
+    
+}
+
+.About-col p {
+
+    font-size: 1rem;
+    color: #aaaaaa;
+    padding-bottom: 45px;
+}
+
+
+.Btn-change {
+
+    background-color: transparent;
+    border: 1px solid coral;
+    color: coral;
+
+}
+
+.Pic-about {
+
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Btn-change:hover{
+
+    color: white;
+
+}
+
+
+@media (max-width : 700px) {
+
+    .About-us h1  {
+
+        font-size: 1.8rem;
+        margin-top: 60px;
+    }
+
+
+
+}
+
+
+
+
+
+/*----------------About us ----------------*/
+
+
+
+
+
+
+/*----------------Course  ----------------*/
+
+
+
+.Course-part {
+
+
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./Images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.Course-part  h1 {
+
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.Our-courses {
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+
+.Our-courses p {
+
+    color: #aaaaaa;
+    font-size: 0.9rem;
+
+}
+
+
+.Box p {
+
+    color: #aaaaaa;
+    font-size: 0.9rem;  
+    padding: 10px;
+
+}
+
+
+
+
+.Box h3 {
+
+    padding: 5px 0;
+
+}
+
+
+@media (max-width : 700px) {
+
+    .Course-part h1  {
+
+        font-size: 1.8rem;
+        margin-top: 60px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/*----------------Course  Part----------------*/
+
+
+
+/*----------------Blog Part  ----------------*/
+
+
+.Blog-part {
+
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: left;
+
+}
+
+
+.Blog-left{
+
+    flex-basis: 65%;
+
+}
+
+.Blog-left img{
+
+    width: 100%;
+    
+}
+
+.Blog-left h3{
+
+    color: coral;
+    font-size: 1.5rem;
+    padding: 20px 0;
+
+}
+
+
+.Blog-left p {
+
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    line-height: 30px;
+
+
+
+}
+
+.Blog-right {
+
+    flex-basis: 31%;
+    text-align: center;
+
+}
+
+.Blog-right h3 {
+
+    background-color: coral;
+    padding: 8px 15px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+
+.Blog-right div {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+
+}
+
+
+.Form-footer {
+
+    border: 1px solid #aaaaaa;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+
+
+.Form-item input[type=text], input[type=email]{
+
+    width: 100%;
+    padding: 10px;
+    background-color: #eeeeee80;
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.Form-item textarea{
+
+    width: 100%;
+    height: 180px;
+    background-color: #eeeeee80;
+    border: none;
+    outline: none;
+    padding: 10px;
+
+}
+
+@media (max-width : 700px) {
+
+    .Blog-right {
+
+        padding-top: 50px;
+
+    }
+    
+    
+
+}
+
+
+/*----------------Blog Part  ----------------*/
+
+
+
+
+
+
+/*---------------- Contact Part ----------------*/
+
+
+.Google-map {
+
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+
+.Google-map iframe {
+
+    width: 100%;
+
+}
+
+
+
+
+/*---------------- Contact Part ----------------*/
+
+
+
+
+.All-Contact {
+
+    width: 80%;
+    margin: auto;
+
+}
+
+
+.Contact-col {
+
+
+    display: flex;
+    flex-basis: 45%;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0;
+
+}
+
+.Contact-col div {
+
+    padding: 20px 10px;
+
+}
+
+
+.Contact-col h3 {
+
+    font-weight: 600;
+
+}
+
+.Contact-col p {
+
+    color: #aaaaaa;
+    font-size: 0.9rem;
+
+}
+
+
+.Contact-form {
+
+    flex-basis: 50%;
+    margin-bottom: 50px;
+}
+
+
+.Contact-form  input, .Contact-form textarea{
+
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 17px;
+        outline: none;
+        border: 1px solid #ccc;
+        background-color: white;
+}
+

@@ -1,0 +1,444 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+html {
+
+    font-size: 62.5%;
+
+}
+
+
+@font-face {
+    font-family: Yk-Regular;
+    src: url(./Fonts/Yekan\ Bakh\ EN\ 04\ Regular.woff);
+}
+
+@font-face {
+    font-family: Yk-Medium;
+    src: url(./Fonts/Yekan\ Bakh\ EN\ 05\ Medium.woff);
+}
+
+@font-face {
+    font-family: Yk-Bold;
+    src: url(./Fonts/Yekan\ Bakh\ EN\ 06\ Bold.woff);
+}
+
+@font-face {
+    font-family: Yk-Heavy;
+    src: url(./Fonts/Yekan\ Bakh\ EN\ 07\ Heavy.woff);
+}
+
+
+
+
+.Bg-form {
+
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #22985C;
+    justify-content: center;
+    align-items: center;
+    
+ 
+}
+
+
+.Form-container{
+
+    display: flex;
+    width: 65%;
+    height: 85%;
+    background-color: tomato;
+    border-radius: 30px;
+
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+    .Form-container{
+        width: 40%;
+    }
+
+  }
+
+  @media only screen and (max-width: 750px) {
+ 
+    .Form-container{
+       width: 60%;
+       
+    }
+
+  
+     
+  }
+
+  @media only screen and (max-width: 450px) {
+ 
+    .Form-container{
+       width: 80%;
+       
+    }
+
+
+  }
+
+
+
+.form {
+
+    background-color: #fcfcfc;
+    width: 50%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+    .form{
+        width: 100%;
+        border-radius: 30px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+ 
+    .form{
+        width: 100%;
+        border-radius: 30px;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 750px) {
+ 
+    form{
+
+        scale: 0.9;
+
+    }
+
+    
+  }
+  @media only screen and (max-width: 1000px) {
+ 
+    form{
+
+        scale: 0.8;
+    }
+
+  }
+
+
+
+
+.pic {
+    background-color: black;
+    width: 50%;
+    background-image: url(./Image/Car.jpg);
+    background-size: cover;
+    border-radius: 30px 0px 0px 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+ 
+    .pic{
+        width: 0%;
+    }
+
+  }
+
+
+
+
+
+.pic h3 {
+    
+    
+    text-align: center;
+    font-size: 3rem;
+    font-family: Yk-Bold;
+    color: white;
+    margin-top: 40rem;
+}
+
+
+.pic img {
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+
+}
+
+
+
+.form {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    transition: 0.5s  ease-in-out;
+}
+
+
+.form:hover {
+
+    width: 60%;
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+ 
+
+    .form:hover {
+
+        width: 100%;
+    }
+
+  }
+
+
+
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.form h2 {
+
+    font-family: Yk-Heavy;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.form p{
+
+    text-align: center;
+    font-family: Yk-Bold;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.form p span{
+
+    color: #3cb978;
+   
+}
+
+
+
+
+.form input[type=email] {
+
+    width: 30rem;
+    flex-direction: column;
+    padding: 1.4rem;
+    background-color: #fcfcfc;
+    border: 1.5px solid #acacac;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    
+}
+
+::placeholder{
+
+    font-family: Yk-Medium;
+    color: #acacac;
+    font-size: 1.5rem;
+
+}
+
+
+.form input[type=password] {
+
+    width: 30rem;
+    flex-direction: column;
+    padding: 1.4rem;
+    background-color: #fcfcfc;
+    border: 1.5px solid #acacac;
+    border-radius: 5px;
+    margin-bottom: 1.4rem;
+    
+}
+
+.Rememeber-me {
+
+    
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    color: #acacac;
+    font-family: Yk-Medium;
+    font-size: 1rem;    
+    margin-bottom: 1rem;
+}
+
+
+.Rememeber-me a {
+
+    color: #acacac;
+    font-family: Yk-Medium;
+    font-size: 1rem;
+    align-items: center;
+
+}
+
+
+.Rememeber-me input[type=checkbox]{
+
+    vertical-align: middle;
+    margin-left: 0.5rem;
+ 
+}
+
+
+
+.Enter-btn {
+
+    width: 30rem;
+    background-color: #3cb978;
+    padding: 1.4rem;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Yk-Medium;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+
+}
+
+.Enter-btn:hover{
+
+   background-color:  #30a569;
+}
+
+
+.Line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Yk-Medium;
+    margin-bottom: 3rem;
+}
+
+.Line span{
+
+    padding: 0 2rem;
+    align-items: center;
+    color: #acacac;
+}
+.Line .Line1{
+    width: 11.5rem;
+    height: 0.5px; 
+    background-color: #acacac;
+}
+.Line .Line2{
+    width: 11.5rem;
+    height: 0.5px;
+    background-color: #acacac;
+}
+
+
+.Google {
+
+    display: flex;
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    font-family: Yk-Heavy;
+    font-size: 1.2rem;
+    border: solid 1.5px #acacac;
+    padding: 1.4rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+.Google a {
+
+  margin-right: 0.6rem;
+}
+
+.Apple {
+
+    display: flex;
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    font-family: Yk-Heavy;
+    font-size: 1.2rem;
+    border: solid 1.5px #acacac;
+    padding: 1.4rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    
+}
+
+
+.Apple img {
+
+    margin-bottom: 3px;
+}
+
+.Apple a {
+
+  margin-right: 0.6rem;
+}
+
+
+.Footer-p p {
+
+    font-family: Yk-Medium;
+    font-size: 1.2rem;
+    color: #acacac ;
+
+}
+
+.Footer-p a {
+
+    font-family: Yk-Bold;
+    font-size: 1.2rem;
+   
+}
+
+
+.pic img {
+
+    animation: Rotate 5s infinite linear ;
+
+}
+
+
+@keyframes Rotate {
+
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+
+
+}

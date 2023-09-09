@@ -1,0 +1,549 @@
+/*    Global Section    */
+
+
+html {
+
+    font-size: 62.5%;
+
+}
+
+* { 
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+
+body {
+
+    font-family: 'Poppins';
+    
+}
+
+
+
+
+
+/*    Header Section   F1E2D1  */
+
+
+
+.Container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+@media (max-width:1000px) {
+
+    .Container {
+
+        padding: 0 2.4em;
+
+    }
+
+
+}
+
+
+.Our-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+
+}
+
+
+
+
+nav ul{
+
+    display: flex;
+    gap: 4.1em;
+    
+}
+
+@media (max-width:1000px) {
+
+    nav ul {
+
+        display: none;
+
+    }
+
+
+}
+
+
+nav ul li a {
+
+    font-size: 1.6rem;
+    color: black;
+    position: relative;
+}
+
+
+nav ul li a.Active-home:before {
+
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 35%;
+    height: 2.5px;
+    bottom: -7px;
+    
+}
+
+
+nav ul li a:before{
+
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 0%;
+    height: 2.5px;
+    bottom: -7px;
+    transition: width 0.5s ease;
+}
+
+
+
+/*    Hero Section - Left-col    */
+
+
+
+main {
+
+    display: flex;
+    gap: 8em;
+    margin-top: 11em;
+
+}
+
+@media (max-width:1000px) {
+
+    main {
+
+        flex-direction: column;
+        
+        
+    }
+
+}
+
+
+
+.Left-col {
+
+    flex-basis: 45%;
+    
+}
+
+
+@media (max-width:1000px) {
+
+    .Left-col {
+
+        text-align: center;
+        
+        
+    }
+
+}
+
+
+
+h1 {
+
+    font-size: 5.2rem;
+    color: black;
+    font-weight: normal;
+    font-family: 'Playfair display';
+    
+
+}
+
+
+
+@media (max-width:1000px) {
+
+    h1 {
+
+        font-size: 3.6rem;
+
+    }
+
+
+}
+
+
+.Sub-h1 {
+
+    font-size: 1.8rem;
+    margin: 1em 0;
+}
+
+@media (max-width:1000px) {
+
+    .Sub-h1 {
+
+        font-size: 1.2rem;
+
+    }
+
+
+}
+
+.Buttons{
+
+    margin: 5em 0;
+}
+
+
+
+
+@media (max-width:1168px) {
+
+    .Buttons {
+
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+
+.Buttons, .Secedery-btn {
+
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    
+}
+
+.Primary-Btn {
+
+    background-color: #F1E2D1;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: black;
+    padding: 1em 2em;
+    border-radius: .8em;
+    transition: .5s ease;
+}
+
+
+
+.Secedery-btn {
+
+    display: block;
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+    transition: .4s ease-in;
+    
+}
+
+.Secedery-btn svg {
+
+    width: 20px;
+    position: absolute;
+    right: -35px;
+    top: 5px;
+    transition: .3s ease-in;
+}
+
+
+.Box-employ {
+
+    display: flex;
+    padding: 5em;
+    gap: 2em;
+    border: 1px solid #000;
+    border-radius: .8em;
+    position: relative;
+}
+
+@media (max-width:1168px) {
+
+    .Box-employ {
+
+        padding: 3em;
+        text-align: left;
+    }
+
+}
+
+.Box-employ:before{
+
+    position: absolute;
+    content: "";
+    background: url('./Assets/images/confetti.svg');
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -25px;
+}
+
+.Number-k {
+
+    font-size: 2.8rem;
+    font-weight: 200;
+    line-height: 100%;
+
+}
+
+.Text-k {
+
+    font-size: 1.4rem;
+
+}
+
+
+
+
+
+
+/*    Hero Section - Right-col    */
+
+
+
+
+
+.Right-col {
+
+    flex-basis: 55%;
+    display: grid;
+    gap: 2.3em;
+    grid-template-columns: repeat(2,auto); 
+    grid-template-areas: 
+         "Left Right"
+         "Left Bottom";
+}
+
+.Card {
+
+    border-radius: 0.6em;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 1.5em; 
+    transition: background-size 600ms ease-in-out;
+
+}
+
+.Card1{
+
+    grid-area: Left;
+    background-image: url('./Assets/images/clothing1.jpg');
+    width: 100%;
+    background-size: 150%;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+
+.Card1::before {
+
+    position: absolute;
+    content: "";
+    background: url('./Assets/images/tag.svg') no-repeat;
+    width: 100%;
+    height: 100%;
+    left: -40px;
+    top: 10px;
+    pointer-events: none;
+}
+
+@media (max-width:1168px) {
+
+    .Card1::before {
+
+        position: absolute;
+        content: "";
+        transform: scale(0.6);
+        background: url('./Assets/images/tag.svg') no-repeat;
+        width: 100%;
+        height: 100%;
+        left: -60px;
+        top: -50px;
+        pointer-events: none;
+        
+    }
+
+}
+
+
+.Card2{
+
+    grid-area: Right;
+    background-image: url('./Assets/images/clothing2.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+
+
+}
+
+.Card3{
+
+    grid-area: Bottom;
+    background-image: url('./Assets/images/clothing3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 150%;
+}
+
+.Card-details {
+
+    background-color: white;
+    border-radius: .6em;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    width: 100%;
+    align-items: center;
+    transition: 600ms ease-in-out;
+}
+
+@media (max-width:600px) {
+
+    .Card-details{
+        
+        display: flex;
+        flex-direction: column;
+        font-size: .9rem;
+        text-align: center;
+        gap: 0.8em;
+    }
+
+}
+
+
+.Main-product {
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: black;
+}
+
+@media (max-width:1168px) {
+
+    .Main-product {
+
+        font-size: 1.1rem;
+        
+    }
+
+}
+
+
+
+
+
+.Sub-product {
+
+    color: grey;
+    font-size: 1.2rem;
+
+}
+
+
+@media (max-width:1168px) {
+
+    .Sub-product {
+
+        font-size: 1rem;
+        
+    }
+
+}
+
+.Price-product {
+
+    font-size: 1.6rem;
+
+}
+
+
+
+
+
+
+
+/*     Microinteractions Section    */
+
+
+
+nav ul li a:hover:before{
+
+    width: 35%;
+
+}
+
+
+.Primary-Btn:hover{
+
+    background-color: #e1ceb9;
+
+}
+
+.Secedery-btn:hover{
+
+    text-decoration: underline;
+
+}
+
+.Secedery-btn:hover svg{
+
+    transform: translateX(10px);
+
+}
+
+
+.Card:hover {
+
+    background-size: 160%;
+
+}
+
+
+.Card:hover .Card-details{
+
+    transform: translateY(-20px);
+
+}
+
+
+.Container {
+
+   animation: Scale .6s ease-out forwards;
+
+}
+
+/* .Container {
+
+    animation: Opacity .6s ease-out forwards;
+ 
+ } */
+
+@keyframes Scale {
+
+    from{scale: 0.92;}
+    to{scale: 1;}
+
+}
+
+/* @keyframes Opacity {
+
+    from{opacity: 0;}
+    to{opacity: 1;}
+
+} */
